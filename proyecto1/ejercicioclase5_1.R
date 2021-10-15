@@ -1,0 +1,6 @@
+library(distr)
+X <- AbscontDistribution(d = f, low1 = 1/exp(1), up1 = exp(1))
+p(X)(exp(1))
+p(X)(1)
+1-p(X)(1)
+(p(X)(1))*(1-p(X)(1))

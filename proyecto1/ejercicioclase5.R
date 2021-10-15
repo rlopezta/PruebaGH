@@ -1,0 +1,5 @@
+library(distr)
+g <- function(x) 0.5*exp(-abs(x))
+plot(g,-10,10,main="Density function")
+Y <- AbscontDistribution(d = g, low1 = -10, up1 = 10)
+q(Y)(.875)
